@@ -1,0 +1,14 @@
+Suppose a telescope on Earth receives a series of pulses from a fixed, unresolved source beyond the solar system. 
+The source is a star about 50 light years from Earth. 
+The pulses are in the form of short/long signals and they are received in a very narrow band around an electromagnetic frequency of 452.12919 MHz. 
+A computer algorithm identifies the artificial nature of the pulses. 
+It turns out the pulses carry a message. 
+The pulses signify binary digits. Suppose further that you were, by whatsoever reason, put in charge of decoding this message.
+
+If you successfully encrypted the message, you should be able to answer the following questions:
+* What is the typical body height of our interstellar counterparts?
+* What is their typical lifetime?
+* What is the scale of the devices they used to submit their message?
+* Since when have they been communicating interstellar?
+* What kind of object do they live on?
+* How old is their stellar system?
