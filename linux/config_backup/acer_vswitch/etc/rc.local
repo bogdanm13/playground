@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# created with: 
+# * fallocate -l 4G /swap.file
+# * chmod 600 /swap.file
+# * mkswap /swap.file 
+swapon /swap.file
