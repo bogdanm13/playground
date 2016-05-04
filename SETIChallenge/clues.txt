@@ -20,6 +20,12 @@ Fibonacci seq: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987,
 Picture width  = 359
 Picture height = 757
 
+Regula de 3 simplă:
+379 -- 0.66
+757 -- X
+
+X = (757 * 0.6635271657642808 )/ 379 = 1.32530360022 Meters alien height
+
 First series of numbers: 0..756
 Second series of numbers: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29,  .. , 5717, 5737, 5741, 5743, 5749 (primes from 2 to 5749)
 
