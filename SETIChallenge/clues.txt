@@ -15,3 +15,15 @@
 Palindromic primes: 2, 3, 5, 7, 11, 101, 131, 151, 181, 191, 313, 353, 373, 383, 727, 757, 787, 797, 919, 929, 10301, 10501, 10601, 11311, 11411, 12421, 12721, 12821, 13331, 13831, 13931, 14341, 14741, 15451, 15551, 16061, 16361, 16561, 16661, 17471, 17971, 18181
 
 Fibonacci seq: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811
+
+#################
+Picture width  = 359
+Picture height = 757
+
+First series of numbers: 0..756
+Second series of numbers: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29,  .. , 5717, 5737, 5741, 5743, 5749 (primes from 2 to 5749)
+
+online reverse string: http://codebeautify.org/reverse-string
+online prime number list: https://primes.utm.edu/lists/small/1000.txt
+online bin to dec: http://www.binaryhexconverter.com/binary-to-decimal-converter
+
