@@ -1,0 +1,4 @@
+# use lsusb to get vendor:product ids
+SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee2", MODE="0600", OWNER="bogdan"
+# udevadm control --reload
+
