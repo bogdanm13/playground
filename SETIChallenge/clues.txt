@@ -11,7 +11,7 @@
 
 ### Wave image
 
-Picture height in lines: 755 = 5 * 151 (a palindromic prime).
+Picture height in lines: 757 (a palindromic prime).
 Picture width  = 359
 
 Regula de 3 simplă:
