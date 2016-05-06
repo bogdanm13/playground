@@ -5,11 +5,17 @@
 
 ## Image Clues
 
-### Numeric series
+* All images are 757 lines x 359 columns.
+
+### Numeric series images
 1. First series of numbers: 0..756
 2. Second series of numbers: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29,  .. , 5717, 5737, 5741, 5743, 5749 (primes from 2 to 5749)
 
 ### Wave image
+
+* Wave is incomplete at the top, suggests the header?
+
+### Alien image
 
 Picture height in lines: 757 (a palindromic prime).
 Picture width  = 359
