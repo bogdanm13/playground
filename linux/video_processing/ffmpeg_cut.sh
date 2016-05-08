@@ -2,7 +2,7 @@
 
 set -x 
 
-_parse_args(){
+_cut_parse_args(){
  input=$1
  ss=$2
  t=$3
@@ -10,14 +10,13 @@ _parse_args(){
 }
 
 cut(){
- ffmpeg -i $1 -ss $2 -t $3 -c copy $4
+ _cut_parse_args $*
+ echo "Cutting from $input starting with $ss upto $t into $output"
+ ffmpeg -i $input -ss $ss -t $t -c copy $output 
 }
 
 main(){
- _parse_args $*
- echo "Cutting from $input starting with $ss upto $t into $output"
- echo "Press any key to continue..." && read
- cut $input $ss $t $output
+ cut $*
 }
 
 if [[ $0 =~ ffmpeg_cut.sh$ ]];

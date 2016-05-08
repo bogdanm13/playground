@@ -1,6 +1,6 @@
 #!/bin/sh
 
-_parse_args(){
+_join_parse_args(){
  input=""
  while [ $# -gt 1 ]; do 
   input="$input $1"
@@ -10,6 +10,9 @@ _parse_args(){
 }
 
 join(){
+ _join_parse_args $*
+ echo "Joining files $input into $output"
+
  tmpfile=tmpfile
 
  for f in $input; do 
@@ -22,10 +25,7 @@ join(){
 }
 
 main(){
- _parse_args $*
- echo "Joining files $input into $output"
- echo "Press any key to continue..." && read
- join
+ join $*
 }
 
 if [[ $0 =~ ffmpeg_join.sh$ ]];
