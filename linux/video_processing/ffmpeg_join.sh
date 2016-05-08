@@ -1,6 +1,5 @@
 #!/bin/sh
 
-pwd=`pwd`
 input=""
 while [ $# -gt 1 ]; do 
 	input="$input $1"
@@ -17,8 +16,6 @@ for f in $input; do
 	echo file "$f" >> $tmpfile
 done
 
-cd $pwd
-echo $PWD
 ffmpeg -f concat -i $tmpfile -c copy $output
 
 rm -f ${tmpfile}
