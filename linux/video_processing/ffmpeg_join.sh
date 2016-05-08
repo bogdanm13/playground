@@ -21,9 +21,15 @@ join(){
  rm -f ${tmpfile}
 }
 
-_parse_args $*
-echo "Joining files $input into $output"
-echo "Press any key to continue..." && read
-join
+main(){
+ _parse_args $*
+ echo "Joining files $input into $output"
+ echo "Press any key to continue..." && read
+ join
+}
 
+if [[ $0 =~ ffmpeg_join.sh$ ]];
+then 
+ main $*
+fi
 
