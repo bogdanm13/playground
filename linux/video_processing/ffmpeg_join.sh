@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set +x
+set -e 
+
 _join_parse_args(){
  input=""
  while [ $# -gt 1 ]; do 
@@ -15,13 +18,12 @@ join(){
 
  tmpfile=tmpfile
 
+ rm $tmpfile
  for f in $input; do 
   echo file "$f" >> $tmpfile
  done
 
- ffmpeg -f concat -i $tmpfile -c copy $output
-
- rm -f ${tmpfile}
+ ffmpeg -f concat -i ${tmpfile} -c copy $output && rm -f ${tmpfile}
 }
 
 main(){

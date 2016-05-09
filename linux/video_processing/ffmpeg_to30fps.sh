@@ -1,6 +1,7 @@
 #!/bin/sh
 
-set -x 
+set +x 
+set -e
 
 list=`ls $1`
 echo "will process: $list"

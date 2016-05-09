@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -x 
+set +x 
+set -e 
 
 _cut_parse_args(){
  input=$1
