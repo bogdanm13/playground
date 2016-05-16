@@ -18,7 +18,7 @@ join(){
 
  tmpfile=tmpfile
 
- rm $tmpfile
+ echo > $tmpfile
  for f in $input; do 
   echo file "$f" >> $tmpfile
  done
