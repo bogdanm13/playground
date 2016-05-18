@@ -87,7 +87,7 @@ export RI="--format ansi"
 
 declare -U path
 
-#export LANG=en_US
+export LANG=en_US
 export PAGER=most
 #}}}
 
@@ -111,7 +111,6 @@ HELPDIR=~/zsh_help
 #{{{ Shell Conveniences
 
 alias ls='pwd; ls --color'
-alias vi='vim'
 
 #}}}
 
@@ -136,6 +135,12 @@ fi
 
 # copy with a progress bar.
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
+
+send2phone(){
+ scp -P 2222 $1 192.168.43.1:/mnt/sdcard/beam
+}
+alias ssh2phone="ssh -p 2222 192.168.43.1"
+
 
 #}}}
 
@@ -277,7 +282,7 @@ setopt APPEND_HISTORY
 # setopt INC_APPEND_HISTORY
 
 # Killer: share history between multiple shells
-setopt SHARE_HISTORY
+#setopt SHARE_HISTORY
 
 # If I type cd and then cd again, only save the last one
 setopt HIST_IGNORE_DUPS
