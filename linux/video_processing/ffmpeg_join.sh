@@ -16,14 +16,13 @@ join(){
  _join_parse_args $*
  echo "Joining files $input into $output"
 
- tmpfile=tmpfile
+ tmpfile=`mktemp`
 
- echo > $tmpfile
  for f in $input; do 
   echo file "$f" >> $tmpfile
  done
 
- ffmpeg -f concat -i ${tmpfile} -c copy $output && rm -f ${tmpfile}
+ ffmpeg -safe 0 -f concat -i ${tmpfile} -c copy $output && rm -f ${tmpfile}
 }
 
 main(){
