@@ -13,7 +13,7 @@ _cut_parse_args(){
 cut(){
  _cut_parse_args $*
  echo "Cutting from $input starting with $ss upto $t into $output"
- ffmpeg -ss $ss -t $t -noaccurate_seek -i $input -c copy -map 0 $output 
+ ffmpeg -ss $ss -t $t -noaccurate_seek -i $input -c copy -map 0 -dn $output 
 }
 
 main(){
