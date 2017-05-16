@@ -19,7 +19,7 @@ join(){
  tmpfile=`mktemp`
 
  for f in $input; do 
-  echo file "$f" >> $tmpfile
+  echo file $PWD/"$f" >> $tmpfile
  done
 
  ffmpeg -safe 0 -f concat -i ${tmpfile} -c copy $output && rm -f ${tmpfile}
